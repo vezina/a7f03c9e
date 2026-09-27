@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Flaireuse — boutique en ligne présentement fermée. Retrouvez-nous dans les marchés à venir.">
+  <title>Flaireuse — Boutique fermée</title>
+
+  <!--
+    Flaireuse — page de fermeture
+    ------------------------------------------------
+    Pour modifier les marchés, cherchez la section
+    "PROCHAINS MARCHÉS" plus bas dans le fichier.
+  -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+    :root {
+      --ink: #171717;
+      --muted: #5b5b5b;
+      --line: #d9d9d9;
+      --soft: #f7f7f5;
+      --max-width: 760px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-height: 100%;
+      background: #fff;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #fff;
+      color: var(--ink);
+      font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      width: min(100% - 48px, var(--max-width));
+      margin: 0 auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 0;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      width: min(100%, 520px);
+      height: auto;
+      margin: 0 auto;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 24px 0 72px;
+    }
+
+    .intro {
+      max-width: 590px;
+      margin: 0 auto;
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    .markets {
+      width: 100%;
+      margin-top: 64px;
+      padding-top: 34px;
+      border-top: 1px solid var(--line);
+    }
+
+    .market-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      text-align: left;
+    }
+
+    .market {
+      min-height: 142px;
+      padding: 24px 20px;
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .market-date {
+      margin: 0 0 10px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .06em;
+    }
+
+    .market-place {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.55;
+      font-weight: 300;
+    }
+
+    @media (max-width: 620px) {
+      .page {
+        width: min(100% - 32px, var(--max-width));
+      }
+
+      header {
+        padding: 0;
+      }
+
+      main {
+        padding: 24px 0 58px;
+      }
+
+      .intro {
+        font-size: 16px;
+        line-height: 1.75;
+      }
+
+      .markets {
+        margin-top: 48px;
+      }
+
+      .market-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .market {
+        min-height: 0;
+        padding: 20px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header aria-label="Flaireuse">
+      <img class="logo" src="LOGO.png" alt="Flaireuse" width="2048" height="1152">
+    </header>
+
+    <main>
+      <p class="intro">La boutique en ligne est temporairement fermé, car je suis en production pour les marchés du temps des Fêtes. Au plaisir de vous croiser en personne! ♡</p>
+
+      <!-- =========================================================
+           PROCHAINS MARCHÉS
+           Modifiez simplement les dates et les lieux ci-dessous.
+           Vous pouvez ajouter ou retirer des blocs .market au besoin.
+           ========================================================= -->
+      <section class="markets" aria-label="Marchés du temps des Fêtes">
+        <div class="market-list">
+          <article class="market">
+            <p class="market-date">14-15 novembre</p>
+            <p class="market-place">Central POP<br>Drummondville</p>
+          </article>
+
+          <article class="market">
+            <p class="market-date">21-22 novembre</p>
+            <p class="market-place">Marché des Fêtes Etsy Trois-Rivières &amp; La Meraki</p>
+          </article>
+
+          <article class="market">
+            <p class="market-date">28-29 novembre</p>
+            <p class="market-place">Marché de Noël de Mirabel</p>
+          </article>
+
+          <article class="market">
+            <p class="market-date">4-5-6 décembre</p>
+            <p class="market-place">Marcher Noël à Saint-Jérôme</p>
+          </article>
+
+          <article class="market">
+            <p class="market-date">12-13-14 décembre</p>
+            <p class="market-place">Noël sur la 5ième rue<br>Limoilou</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+</body>
+</html>
