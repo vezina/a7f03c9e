@@ -118,47 +118,45 @@
       border-radius: 10px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-    }
-
-    .market-date {
-      margin: 0 0 10px;
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: .06em;
-    }
-
-    .market-place {
-      margin: 0;
-      font-size: 15px;
-      line-height: 1.55;
-      font-weight: 400;
-    }
-
-    .market-name,
-    .market-former-name,
-    .market-city,
-    .market-venue {
-      display: block;
+      justify-content: flex-start;
     }
 
     .market-name {
-      font-weight: 400;
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.4;
+      font-weight: 600;
     }
 
-    .market-former-name,
-    .market-venue {
+    .market-former-name {
+      display: block;
       color: var(--muted);
       font-size: 13px;
       font-weight: 400;
     }
 
-    .market-city {
-      margin-top: 8px;
+    .market-date {
+      margin: 0 0 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+
+    .market-place {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.45;
+      font-weight: 400;
+    }
+
+    .market-city,
+    .market-venue {
+      display: block;
     }
 
     .market-venue {
-      margin-top: 3px;
+      color: var(--muted);
+      font-size: 13px;
     }
 
     @media (max-width: 620px) {
@@ -215,46 +213,47 @@
       <section class="markets" aria-label="Marchés des Fêtes">
         <div class="market-list">
           <article class="market">
+            <h2 class="market-name">Marché des Fêtes Central Pop</h2>
             <p class="market-date">14-15 novembre 2026</p>
             <p class="market-place">
-              <span class="market-name">Marché des Fêtes Central Pop</span>
               <span class="market-city">Drummondville</span>
               <span class="market-venue">Centrexpo Promutuel Assurance</span>
             </p>
           </article>
 
           <article class="market">
+            <h2 class="market-name">Créateurs &amp; Saveurs d’ici
+              <span class="market-former-name">(anciennement Etsy)</span>
+            </h2>
             <p class="market-date">21-22 novembre 2026</p>
             <p class="market-place">
-              <span class="market-name">Créateurs &amp; Saveurs d’ici</span>
-              <span class="market-former-name">(anciennement Etsy)</span>
               <span class="market-city">Trois-Rivières</span>
               <span class="market-venue">Musée Pop</span>
             </p>
           </article>
 
           <article class="market">
+            <h2 class="market-name">Marché de Noël</h2>
             <p class="market-date">28-29 novembre 2026</p>
             <p class="market-place">
-              <span class="market-name">Marché de Noël</span>
               <span class="market-city">Mirabel</span>
               <span class="market-venue">Centre Culturel du Domaine-Vert Nord</span>
             </p>
           </article>
 
           <article class="market">
+            <h2 class="market-name">Marcher Noël</h2>
             <p class="market-date">4-5-6 décembre 2026</p>
             <p class="market-place">
-              <span class="market-name">Marcher Noël</span>
               <span class="market-city">Saint-Jérôme</span>
               <span class="market-venue">Hôtel de ville</span>
             </p>
           </article>
 
           <article class="market">
+            <h2 class="market-name">Noël sur la 5ième rue</h2>
             <p class="market-date">11-12-13 décembre 2026</p>
             <p class="market-place">
-              <span class="market-name">Noël sur la 5ième rue</span>
               <span class="market-city">Québec</span>
               <span class="market-venue">Église Saint-Charles-de-Limoilou</span>
             </p>
