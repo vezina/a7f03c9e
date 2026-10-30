@@ -132,7 +132,33 @@
       margin: 0;
       font-size: 15px;
       line-height: 1.55;
-      font-weight: 300;
+      font-weight: 400;
+    }
+
+    .market-name,
+    .market-former-name,
+    .market-city,
+    .market-venue {
+      display: block;
+    }
+
+    .market-name {
+      font-weight: 600;
+    }
+
+    .market-former-name,
+    .market-venue {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .market-city {
+      margin-top: 8px;
+    }
+
+    .market-venue {
+      margin-top: 3px;
     }
 
     @media (max-width: 620px) {
@@ -190,27 +216,48 @@
         <div class="market-list">
           <article class="market">
             <p class="market-date">14-15 novembre 2026</p>
-            <p class="market-place">Marché des Fêtes Central Pop<br>Drummondville<br>Centrexpo Promutuel Assurance</p>
+            <p class="market-place">
+              <strong class="market-name">Marché des Fêtes Central Pop</strong>
+              <span class="market-city">Drummondville</span>
+              <span class="market-venue">Centrexpo Promutuel Assurance</span>
+            </p>
           </article>
 
           <article class="market">
             <p class="market-date">21-22 novembre 2026</p>
-            <p class="market-place">Créateurs &amp; Saveurs d’ici<br>(anciennement Etsy)<br>Trois-Rivières<br>Musée Pop</p>
+            <p class="market-place">
+              <strong class="market-name">Créateurs &amp; Saveurs d’ici</strong>
+              <span class="market-former-name">(anciennement Etsy)</span>
+              <span class="market-city">Trois-Rivières</span>
+              <span class="market-venue">Musée Pop</span>
+            </p>
           </article>
 
           <article class="market">
             <p class="market-date">28-29 novembre 2026</p>
-            <p class="market-place">Marché de Noël<br>Mirabel<br>Centre Culturel du Domaine-Vert Nord</p>
+            <p class="market-place">
+              <strong class="market-name">Marché de Noël</strong>
+              <span class="market-city">Mirabel</span>
+              <span class="market-venue">Centre Culturel du Domaine-Vert Nord</span>
+            </p>
           </article>
 
           <article class="market">
             <p class="market-date">4-5-6 décembre 2026</p>
-            <p class="market-place">Marcher Noël<br>Saint-Jérôme<br>Hôtel de ville</p>
+            <p class="market-place">
+              <strong class="market-name">Marcher Noël</strong>
+              <span class="market-city">Saint-Jérôme</span>
+              <span class="market-venue">Hôtel de ville</span>
+            </p>
           </article>
 
           <article class="market">
             <p class="market-date">11-12-13 décembre 2026</p>
-            <p class="market-place">Noël sur la 5ième rue<br>Québec<br>Église Saint-Charles-de-Limoilou</p>
+            <p class="market-place">
+              <strong class="market-name">Noël sur la 5ième rue</strong>
+              <span class="market-city">Québec</span>
+              <span class="market-venue">Église Saint-Charles-de-Limoilou</span>
+            </p>
           </article>
         </div>
       </section>
